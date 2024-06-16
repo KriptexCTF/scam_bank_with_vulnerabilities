@@ -8,6 +8,9 @@
     if (isset($_POST['submit'])) {
             $username = $_POST['login'];
             $password = $_POST['password'];
+            //Защита sqli
+            //$username = pg_escape_string($db_connect, $_POST['login']);
+            //$password = pg_escape_string($db_connect, $_POST['password']);
             if (!$username || !$password){
                 $output_db = 'Пожалуйста введите все значения!';
             } else {
