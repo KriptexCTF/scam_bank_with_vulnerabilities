@@ -64,7 +64,7 @@ if (isset($_POST['submit'])) {
         <ul>
           <li><img src="image/logo.png" class="logo"></li>
           <li><a href="index.php">Главная</a></li>
-          <li style="float:right"><a id="exit" class="exit_button">Выйти из акканта</a></li>
+          <li style="float:right"><a id="exit" class="exit_button">Выйти из аккаунта</a></li>
           <li style="float:right"><a style="background-color: white; font-weight: bold" class="username"><?php echo $username?></a></li>
           <script>
               document.getElementById('exit').addEventListener('click', function(e) {
